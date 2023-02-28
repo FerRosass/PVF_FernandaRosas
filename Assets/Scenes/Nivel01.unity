@@ -370,7 +370,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 145848977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1755657248}
+        m_TargetAssemblyTypeName: Pause_Menu, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &145848977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -642,7 +654,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 463291093}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1755657248}
+        m_TargetAssemblyTypeName: Pause_Menu, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &463291093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1056,7 +1080,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  xRange: 5
+  xRange: 8
   logic: {fileID: 0}
   FarmerAlive: 1
 --- !u!50 &788686309
@@ -1796,7 +1820,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1676571234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1755657249}
+        m_TargetAssemblyTypeName: Logic_Script, Assembly-CSharp
+        m_MethodName: restartGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1676571234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1970,6 +2006,7 @@ GameObject:
   - component: {fileID: 1755657245}
   - component: {fileID: 1755657244}
   - component: {fileID: 1755657248}
+  - component: {fileID: 1755657249}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -2034,7 +2071,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -2074,6 +2111,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenuUI: {fileID: 2088829665}
+--- !u!114 &1755657249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1755657243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e828d303a06a946897fc950e40733e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPoints: 0
+  pointsText: {fileID: 0}
+  GameOverScreen: {fileID: 0}
+  spawner: {fileID: 0}
 --- !u!1 &1797693990
 GameObject:
   m_ObjectHideFlags: 0

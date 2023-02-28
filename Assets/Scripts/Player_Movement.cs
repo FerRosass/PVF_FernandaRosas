@@ -37,10 +37,13 @@ public class Player_Movement : MonoBehaviour
     }
     void Direction(float horizontalInput)
     {
-        if((rightmovement= true && horizontalInput<0) || (rightmovement=false && horizontalInput>0))
+        if(rightmovement= true && horizontalInput<0)
         {
-            rightmovement = !rightmovement;
             transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
+        else if(rightmovement = false && horizontalInput > 0)
+        {
+            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
     }
 }
