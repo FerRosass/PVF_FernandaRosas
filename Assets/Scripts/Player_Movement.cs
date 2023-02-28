@@ -11,10 +11,12 @@ public class Player_Movement : MonoBehaviour
 
     public Logic_Script logic;
     public bool FarmerAlive = true;
+    private Animator animator;
 
     void Start()
     {
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Logic_Script>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -29,5 +31,6 @@ public class Player_Movement : MonoBehaviour
         {
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
+        animator.SetFloat("Horizontal", Mathf.Abs(horizontalInput));
     }
 }
