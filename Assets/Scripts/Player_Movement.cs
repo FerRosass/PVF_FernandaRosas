@@ -12,6 +12,7 @@ public class Player_Movement : MonoBehaviour
     public Logic_Script logic;
     public bool FarmerAlive = true;
     private Animator animator;
+    bool rightmovement = true;
 
     void Start()
     {
@@ -32,5 +33,14 @@ public class Player_Movement : MonoBehaviour
             transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
         }
         animator.SetFloat("Horizontal", Mathf.Abs(horizontalInput));
+        Direction(horizontalInput);
+    }
+    void Direction(float horizontalInput)
+    {
+        if((rightmovement= true && horizontalInput<0) || (rightmovement=false && horizontalInput>0))
+        {
+            rightmovement = !rightmovement;
+            transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
+        }
     }
 }
