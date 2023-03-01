@@ -2797,6 +2797,7 @@ MonoBehaviour:
   pointsText: {fileID: 34728855}
   GameOverScreen: {fileID: 929410916}
   spawner: {fileID: 0}
+  InstructionsScreen: {fileID: 0}
 --- !u!4 &1430928519
 Transform:
   m_ObjectHideFlags: 0
@@ -3354,6 +3355,7 @@ MonoBehaviour:
   pointsText: {fileID: 0}
   GameOverScreen: {fileID: 0}
   spawner: {fileID: 0}
+  InstructionsScreen: {fileID: 0}
 --- !u!4 &1797528035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2719227801452879243, guid: 0a84f54077193d3489d0de133048df37, type: 3}
@@ -3538,7 +3540,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1938005561}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1755657248}
+        m_TargetAssemblyTypeName: Pause_Menu, Assembly-CSharp
+        m_MethodName: Menu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1938005561
 MonoBehaviour:
   m_ObjectHideFlags: 0
