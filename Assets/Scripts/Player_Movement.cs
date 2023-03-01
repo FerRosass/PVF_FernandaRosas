@@ -22,6 +22,7 @@ public class Player_Movement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         logic = GameObject.FindGameObjectWithTag("Logic").GetComponent<Logic_Script>();
+        
     }
 
     void FixedUpdate()
@@ -30,6 +31,8 @@ public class Player_Movement : MonoBehaviour
         float moveInput = Input.GetAxis("Horizontal"); 
         rb.velocity = new Vector2(moveInput * movementSpeed, rb.velocity.y);
         anim.SetBool("IsMoving", moveInput != 0f);
+        
+
 
         if (moveInput > 0 && !isFacingRight) 
         {
