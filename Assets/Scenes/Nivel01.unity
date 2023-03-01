@@ -2005,7 +2005,7 @@ GameObject:
   - component: {fileID: 788686308}
   - component: {fileID: 788686307}
   m_Layer: 3
-  m_Name: Canasta
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2154,7 +2154,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788686306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.97, z: 0}
+  m_LocalPosition: {x: 0, y: -2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2797,7 +2797,7 @@ MonoBehaviour:
   pointsText: {fileID: 34728855}
   GameOverScreen: {fileID: 929410916}
   spawner: {fileID: 0}
-  InstructionsScreen: {fileID: 0}
+  InstructionsUI: {fileID: 0}
 --- !u!4 &1430928519
 Transform:
   m_ObjectHideFlags: 0
@@ -3355,7 +3355,7 @@ MonoBehaviour:
   pointsText: {fileID: 0}
   GameOverScreen: {fileID: 0}
   spawner: {fileID: 0}
-  InstructionsScreen: {fileID: 0}
+  InstructionsUI: {fileID: 0}
 --- !u!4 &1797528035 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2719227801452879243, guid: 0a84f54077193d3489d0de133048df37, type: 3}

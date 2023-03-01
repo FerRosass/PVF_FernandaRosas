@@ -10,8 +10,7 @@ public class Logic_Script : MonoBehaviour
     public Text pointsText;
     public GameObject GameOverScreen;
     public Object_Spawner spawner;
-    public GameObject InstructionsScreen;
-
+    public GameObject InstructionsUI;
 
     public void addScore(int pointsToAdd)
     {
@@ -34,15 +33,21 @@ public class Logic_Script : MonoBehaviour
         GameOverScreen.SetActive(true);
         Time.timeScale = 0f;
     }
-    public void Instructions()
-    {
-        InstructionsScreen.SetActive(true);
-        Time.timeScale = 0f;
-    }
     public void Quit()
     {
         Debug.Log("Saliendo...");
         Application.Quit();
     }
+    public void Back()
+    {
+        InstructionsUI.SetActive(false);
+        Time.timeScale = 1f;
 
+    }
+    public void InstructionsPanel()
+    {
+        InstructionsUI.SetActive(true);
+        Time.timeScale = 0f;
+
+    }
 }
