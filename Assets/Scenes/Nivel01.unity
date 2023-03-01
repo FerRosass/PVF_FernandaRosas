@@ -576,7 +576,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.39
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1573,9 +1573,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Menu
-
-'
+  m_Text: "Men\xFA\n"
 --- !u!222 &447391741
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2055,7 +2053,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 788686306}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -2067,7 +2065,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &788686310
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2675,7 +2673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: "Men\xFA"
 --- !u!222 &1412036652
 CanvasRenderer:
   m_ObjectHideFlags: 0

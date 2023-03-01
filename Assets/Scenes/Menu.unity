@@ -156,7 +156,7 @@ RectTransform:
   m_Children:
   - {fileID: 539179886}
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -770,7 +770,7 @@ RectTransform:
   - {fileID: 1511702424}
   - {fileID: 359267654}
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -848,7 +848,7 @@ RectTransform:
   m_Children:
   - {fileID: 1803219731}
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1173,10 +1173,10 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 25
+    m_FontSize: 23
     m_FontStyle: 1
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 2
     m_MaxSize: 82
     m_Alignment: 1
     m_AlignByGeometry: 0
@@ -1184,8 +1184,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Para moverte puedes usar las teclas A y D o las flechas izquierda y derecha.\n\n\nRecoge
-    las frutas pra ganar puntos \n\n\nEvita las bombas o perderas"
+  m_Text: "Para moverte puedes usar las teclas A y D o las flechas izquierda y derecha.\n\nRecoge
+    las frutas para ganar puntos. \n\nEvita las bombas o perder\xE1s.\n\nPuedes presionar
+    la tecla \"Escape\" para poner pausa al juego.\n\n\xA1Divi\xE9rtete!"
 --- !u!222 &900000056
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1225,7 +1226,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1299,12 +1300,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1064943611}
   m_LocalRotation: {x: -0.24803093, y: -0, z: -0, w: 0.96875215}
-  m_LocalPosition: {x: -399.99994, y: -224.24, z: 0}
-  m_LocalScale: {x: 0.65959775, y: 0.86644757, z: 0.65959775}
+  m_LocalPosition: {x: -399.9999, y: -224.23999, z: 0}
+  m_LocalScale: {x: 0.6595977, y: 0.8664475, z: 0.6595977}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -28.722, y: 0, z: 0}
 --- !u!212 &1064943613
 SpriteRenderer:
@@ -1383,17 +1384,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410721681}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.4, y: 2.4, z: 2.4}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1669622189}
-  m_RootOrder: 6
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -186}
+  m_AnchoredPosition: {x: 399.99997, y: -69.50002}
   m_SizeDelta: {x: 160, y: 40}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1410721683
@@ -1431,7 +1432,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Game by:
 
-    Frnanda Rosas'
+    Fernanda Rosas'
 --- !u!222 &1410721684
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1735,13 +1736,12 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1064943612}
   - {fileID: 1057968866}
   - {fileID: 64078827}
   - {fileID: 728958710}
   - {fileID: 1706614063}
   - {fileID: 641107288}
-  - {fileID: 1410721682}
+  - {fileID: 1064943612}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1884,7 +1884,7 @@ RectTransform:
   m_Children:
   - {fileID: 889703318}
   m_Father: {fileID: 1669622189}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2349,7 +2349,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 0.88
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
