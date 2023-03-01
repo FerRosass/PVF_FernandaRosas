@@ -10,6 +10,7 @@ public class Logic_Script : MonoBehaviour
     public Text pointsText;
     public GameObject GameOverScreen;
     public Object_Spawner spawner;
+    public GameObject InstructionsScreen;
 
 
     public void addScore(int pointsToAdd)
@@ -17,7 +18,12 @@ public class Logic_Script : MonoBehaviour
         playerPoints = playerPoints + pointsToAdd;
         pointsText.text = playerPoints.ToString();
     }
-
+    public void startGame()
+    {
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("Nivel01");
+    }
+    
     public void restartGame()
     {
         Time.timeScale = 1f;
@@ -27,6 +33,16 @@ public class Logic_Script : MonoBehaviour
     {
         GameOverScreen.SetActive(true);
         Time.timeScale = 0f;
+    }
+    public void Instructions()
+    {
+        InstructionsScreen.SetActive(true);
+        Time.timeScale = 0f;
+    }
+    public void Quit()
+    {
+        Debug.Log("Saliendo...");
+        Application.Quit();
     }
 
 }

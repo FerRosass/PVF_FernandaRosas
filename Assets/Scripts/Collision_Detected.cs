@@ -5,6 +5,7 @@ using UnityEngine;
 public class Collision_Detected : MonoBehaviour
 {
     public Logic_Script logic;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +24,14 @@ public class Collision_Detected : MonoBehaviour
             if (gameObject.tag == "Fruit")
             {
                 logic.addScore(1);
+                
                 Destroy(gameObject);
+
             }
             else if (gameObject.tag=="Bomb")
             {
                 logic.gameOver();
+                
                 Destroy(gameObject);
                 Destroy(Player.gameObject);
             }
